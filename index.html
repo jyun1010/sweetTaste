@@ -7,7 +7,7 @@
     <title>Sweetaste</title>
 
     
-
+    <link rel="stylesheet" href="header+nav+footer.css">
     <link rel="stylesheet" href="index.css">
 
 </head>
@@ -17,13 +17,13 @@
         <header>
             <div class="main_header">
                 <div class="logo">
-                    <a href=""><img class="nav_logo" src="images/logo-all-dark.svg" alt=""></a> 
+                    <a href="index.html"><img class="nav_logo" src="images/logo-all-dark.svg" alt=""></a> 
                 </div>
                 <nav>
                     <ul>
-                        <a href=""><li>首頁</li></a>
-                        <a href=""><li>甜點</li></a> 
-                        <a href=""><li>登入</li></a> 
+                        <a href="index.html"><li>首頁</li></a>
+                        <a href="product.html"><li>甜點</li></a> 
+                        <a href="sign_in.html"><li>登入</li></a> 
                         <a href="" class="cart_a"><li><img class="cart" src="images/cart.svg" alt=""></li></a>
                     </ul>
                 </nav>
@@ -46,15 +46,15 @@
                     </div>
                 </label>
                     
-                <a href=""><img class="nav_logo" src="images/logo-all-dark.svg" alt=""></a> 
+                <a href="index.html"><img class="nav_logo" src="images/logo-all-dark.svg" alt=""></a> 
                 <a href="" class="cart_a_2"><li><img class="cart" src="images/cart.svg" alt=""></li></a>
             </div>
             <div class="RWD_choices transition">
                     
                 <ul class="RWD_header_choice transition">
-                    <a href="" class="RWD_header_choice_a"><li>首頁</li></a>
-                    <a href="" class="RWD_header_choice_a"><li>甜點</li></a>
-                    <a href="" class="RWD_header_choice_a"><li>登入</li></a>
+                    <a href="index.html" class="RWD_header_choice_a"><li>首頁</li></a>
+                    <a href="product.html" class="RWD_header_choice_a"><li>甜點</li></a>
+                    <a href="sign_in.html" class="RWD_header_choice_a"><li>登入</li></a>
                 </ul>
             </div>
         </div>
@@ -192,6 +192,9 @@
                 </input>
             </div>
         </div>
+
+        <!-- ------------------footer區---------------- -->
+
         <footer>
             <div class="icon_info">
                 <img class="logotype-sm-dark_img" src="images/logotype-sm-dark.svg" alt="">
@@ -222,17 +225,7 @@
             $( this ).toggleClass('hearted' );                
         })
 
-        $(document).ready(function(){
-            $(".hamburger").click(function(){
-                $(this).toggleClass("is-active");
-               
-            });
-        });
-    
-       
-        
 
-       
         
     </script>
 

@@ -1,0 +1,197 @@
+*
+{
+    padding: 0px;
+    margin: 0px ;
+    font-family: Microsoft JhengHei;
+
+}
+
+.little_div{
+    width: 100%;
+    height: 120px;
+}
+
+.try{
+    padding: 80px 0;
+}
+
+.sign_in_area{
+    
+    width: 55%;
+    display: flex;
+    margin: 0 auto;
+}
+.sign_in_left{
+    width: 50%;
+    background-color: #3F5D45;
+    
+    text-align: center;
+    padding: 30px 0 0 0;
+    
+}
+
+.mediaSNS{
+    width: 100%;
+    background-color: #EAF0ED;
+    height: 60px;
+    padding: 20px 0;
+    display: none;
+}
+.media_sns_a{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.mediaSNS_img{
+    width: 70%;
+    justify-content: center;
+    height: 56px;
+    margin: 0px auto;
+}
+.mediaSNS a{
+    border: 1px solid #EAF0ED;
+    border-collapse: collapse;
+}
+
+
+.sign_in_info{
+    width: 80%;
+    height: 56px;
+    background-color: #EAF0ED;
+    display: flex;
+    align-items:center;
+    margin: 20px auto;
+}
+.sign_icon{
+    width: 24px;
+    height: 24px;
+    margin: 0 20px;
+}
+
+.sign_in_title{
+    font-size: 36px;
+    line-height: 3rem;
+    color: #EAF0ED;
+}
+
+.sign_input{
+    width: 75%;
+    height: 36px;
+    border: none;
+    background-color: #EAF0ED;
+    font-size: 1rem;
+    color: #8DA291;
+}
+
+
+.remember_me{
+    display: flex;
+    text-align: start;
+    width: 80%;
+    margin: 20px auto;
+    
+}
+.remember_me p{
+    font-size: 1rem;
+    color: #EAF0ED;
+    margin: -3px 5px;
+}
+.remember_me_check{
+    
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+    align-items:center;
+}
+
+.sign_check{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #3F5D45;
+    background-color: #FFE180;
+    line-height: 4rem;
+    cursor: pointer;
+     
+}
+
+
+
+/* ------------右側社群登入-------- */
+
+.sign_in_right{
+    width: 50%;
+    background-color:#EAF0ED;
+    margin: 10px  0px;
+}
+
+.sign_in_right_title{
+    font-size: 1.5rem;
+    line-height: 5rem;
+    
+}
+/* 畫分隔線 */
+.sign_in_right_title span {    
+    display: block;     
+    color: #8DA291;
+    text-align: center;
+    position: relative;   
+}
+.sign_in_right_title span:before, .sign_in_right_title span:after {
+    content: '';                
+    position: absolute;        
+    top: 52%;
+    background: #8DA291;      
+    width: 9%;
+    height: 2px;
+}
+.sign_in_right_title span:before{
+    left: 20%;        
+}
+.sign_in_right_title span:after {
+    right: 20%;
+}
+
+
+.SNS_signin{
+    display: flex;
+    flex-direction: column;
+    
+}
+.SNS_signin a{
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #fff;
+    height: 30px;
+    
+}
+.sign_SNS_img{
+    width: 35%;
+    
+
+
+}
+
+
+@media screen and (max-width: 992px){
+    .try{
+        padding:  0;
+    }
+    .sign_in_area{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .sign_in_left{
+        width: 100%;
+        margin: 0;
+    }
+    .sign_in_right{
+        display: none;
+    }
+    .mediaSNS{
+        display: block;
+    }
+    
+}

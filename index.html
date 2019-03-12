@@ -35,18 +35,23 @@
 
         </header>
 
-        <input type="checkbox" id="menu_control">
 
+        <!-- 為了勾選狀態下選單出現，不勾選單消失，不需要顯示 -->
+        <input type="checkbox" id="menu_control">
+     
 
         <div class="RWD">
             <div class="RWD_header">
-                <label class="hamburger_bar bar" for="menu_control">
-                    <div class="hamburger" id="hamburger-1">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </div>
-                </label>
+                <div class="three col">
+                    <label class="hamburger_bar bar" for="menu_control">
+                        <div class="hamburger" id="hamburger-1">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </label>
+                </div>
+
                     
                 <a href="index.html"><img class="nav_logo" src="images/logo-all-dark.svg" alt=""></a> 
                 <a href="" class="cart_a_2"><li><img class="cart" src="images/cart.svg" alt=""></li></a>
@@ -226,7 +231,12 @@
         $(".heart").click( function () {
             $( this ).toggleClass('hearted' );                
         })
-
+            //漢堡選單動作
+        $(document).ready(function(){
+            $(".hamburger").click(function(){
+                $(this).toggleClass("is-active");
+            });
+        });
 
         
     </script>

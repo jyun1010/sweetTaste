@@ -42,12 +42,14 @@
     .right_product{
         width: 100%;
         margin: 0;
+        
     }
     .productsPage_container{
-        width: 80%;
+        width: 100%;
         margin: 50px auto;
         display: flex;
-        flex-direction: column;
+        
+        
     }
     .productsPage_item{
         margin: 30px auto 100px auto !important; 

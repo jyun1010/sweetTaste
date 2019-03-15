@@ -239,7 +239,9 @@
             // 選單切換後效果
             $(".menu ").click(function(e){
                 e.preventDefault();
-                $(this).toggleClass("click_on");
+                $(".menu ").removeClass("click_on");
+                $(this).addClass("click_on");
+              
             })
     </script>
 </body>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="header+nav+footer.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-
+    <link rel="stylesheet" href="jquery-3.3.1.min.js">
 
 </head>
 <body>
@@ -71,11 +71,11 @@
           
                 <div class="left_select">
                     <ul class="side_menu">
-                          <a href="" class="menu"><li class="menu_1">甜點類別</li></a>  
-                          <a href="" class="menu"><li >所有甜點(48)</li></a>  
-                          <a href="" class="menu"><li >本日精選(10)</li></a>  
-                          <a href="" class="menu"><li >人氣推薦(26)</li></a>  
-                          <a href="" class="menu"><li >新品上市(12)</li></a>  
+                          <a href="" ><li class="menu">甜點類別</li></a>  
+                          <a href="" ><li class="menu">所有甜點(48)</li></a>  
+                          <a href="" ><li class="menu">本日精選(10)</li></a>  
+                          <a href="" ><li class="menu">人氣推薦(26)</li></a>  
+                          <a href="" ><li class="menu">新品上市(12)</li></a>  
                     </ul>
                 </div>
 
@@ -236,6 +236,11 @@
                     $(this).toggleClass("is-active");
                 });
             });
+            // 選單切換後效果
+            $(".menu ").click(function(e){
+                e.preventDefault();
+                $(this).toggleClass("click_on");
+            })
     </script>
 </body>
 </html>

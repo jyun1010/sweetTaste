@@ -76,21 +76,24 @@
 .menu{
     list-style: none;
     text-align: center;
-    
     font-size: 1.5rem;
-    text-decoration: none;
     line-height: 4rem;
-    color: #3F5D45;
     font-weight: bolder;
-    
-}
-.menu li{
     border: 1px solid #EAF0ED;
     height: 65px;
     
-    
 }
-.menu_1{
+.side_menu a{
+    text-decoration: none;
+    color:  #3F5D45;
+    display: block;
+}
+.menu:hover,.menu a:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+.click_on{
     background-color: #3F5D45;
     color: #EAF0ED;
 }
